@@ -75,7 +75,27 @@
                     <div>
                         <h2 class="about__subtitle">I'am Ishu</h2>
                         <p class="about__text">I am a Marketing student at The University of Texas at Arlington - College of Business. My areas of interest extend from product management to marketing strategy to brand management, and more. I am looking for an environment where creativity, innovation, and collaboration thrive - a place where I can contribute to the company's success.</p>           
-                    </div>                                   
+                    </div>  
+                    <div class="button">
+
+                        <button onclick="showResume()" style="vertical-align:middle"><span>Resume</span></button>
+            
+                        <div id="resume" style="display: none;">
+                          <!-- Insert the resume content here, such as an embedded PDF or an image of the resume -->
+                          <embed src="assets/resume/resume.pdf" type="application/pdf" width="100%" height="700px">
+                        </div>
+            
+                        <script>
+                          function showResume() {
+                            var resume = document.getElementById('resume');
+                            if (resume.style.display === 'none') {
+                              resume.style.display = 'block';
+                            } else {
+                              resume.style.display = 'none';
+                            }
+                          }
+                        </script>
+                      </div>                                 
                 </div>
             </section>
 
