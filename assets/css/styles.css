@@ -234,7 +234,7 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== ABOUT =====*/
+/* ===== Resume Botton=====*/
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -249,6 +249,63 @@ img {
   width: 200px;
   border-radius: 0.5rem;
 }
+.section .ibutton{
+  margin: 16px 0;
+}
+section .ibutton button{
+  outline: none;
+  display: inline-block;
+  padding: 15px 25px;
+
+
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  
+  text-decoration: none;
+  color: #fff;
+  border-color: #04012e;
+  background-color: #2a0898;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(185, 183, 183);
+  transition: all 0.5s;
+}
+section .ibutton button:hover{
+  border-color: #040138;
+  background-color: rgb(36, 82, 197);
+}
+section .ibutton button:active {
+  background-color: rgb(36, 82, 197);
+  box-shadow: 0 5px rgb(173, 171, 171);
+  transform: translateY(4px);
+}
+
+section .ibutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+section .ibutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+section .ibutton:hover span {
+  padding-right: 25px;
+}
+
+section .ibutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 /* ===== SKILLS =====*/
 .skills__container {
